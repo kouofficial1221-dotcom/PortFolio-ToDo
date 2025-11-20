@@ -39,24 +39,34 @@ Partial Class Form1
         TaskSetFill1 = New ComboBox()
         DataGridView1 = New DataGridView()
         TaskPropTab = New TabPage()
+        Label13 = New Label()
         DataFill2 = New Button()
         TaskOutPropBut = New Button()
+        Label12 = New Label()
         TaskpropTex = New TextBox()
         TaskJaage2 = New ComboBox()
+        Label11 = New Label()
         DataGridView2 = New DataGridView()
         TaskInpPropBut = New Button()
+        Label10 = New Label()
         TaskStarFill2 = New ComboBox()
         TaskIdFill2 = New ComboBox()
         TaskSetFill2 = New ComboBox()
         TaskScoreTab = New TabPage()
+        Label17 = New Label()
         DataFill3 = New Button()
         TaskJaage3 = New ComboBox()
         DataGridView4 = New DataGridView()
         TaskIdFill3 = New ComboBox()
+        Label16 = New Label()
         TaskName = New ComboBox()
         TaskStarFill3 = New ComboBox()
         TaskFinFill = New ComboBox()
         TaskSetFill3 = New ComboBox()
+        Label19 = New Label()
+        Label15 = New Label()
+        Label18 = New Label()
+        Label14 = New Label()
         BindingSource1 = New BindingSource(components)
         PomTimer = New Label()
         RealTimer = New Label()
@@ -69,16 +79,6 @@ Partial Class Form1
         Label7 = New Label()
         Label8 = New Label()
         Label9 = New Label()
-        Label10 = New Label()
-        Label11 = New Label()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
-        Label16 = New Label()
-        Label17 = New Label()
-        Label18 = New Label()
-        Label19 = New Label()
         TabControl1.SuspendLayout()
         TaskTab.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -265,6 +265,15 @@ Partial Class Form1
         TaskPropTab.TabIndex = 1
         TaskPropTab.Text = "タスク詳細"
         ' 
+        ' Label13
+        ' 
+        Label13.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label13.Location = New Point(326, 83)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(62, 16)
+        Label13.TabIndex = 10
+        Label13.Text = "進捗状況"
+        ' 
         ' DataFill2
         ' 
         DataFill2.Location = New Point(326, 19)
@@ -283,6 +292,15 @@ Partial Class Form1
         TaskOutPropBut.Text = "削除"
         TaskOutPropBut.UseVisualStyleBackColor = True
         ' 
+        ' Label12
+        ' 
+        Label12.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label12.Location = New Point(224, 83)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(62, 16)
+        Label12.TabIndex = 10
+        Label12.Text = "セット数"
+        ' 
         ' TaskpropTex
         ' 
         TaskpropTex.AcceptsReturn = True
@@ -299,6 +317,15 @@ Partial Class Form1
         TaskJaage2.Name = "TaskJaage2"
         TaskJaage2.Size = New Size(83, 23)
         TaskJaage2.TabIndex = 9
+        ' 
+        ' Label11
+        ' 
+        Label11.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label11.Location = New Point(122, 83)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(62, 16)
+        Label11.TabIndex = 10
+        Label11.Text = "開始時刻"
         ' 
         ' DataGridView2
         ' 
@@ -319,6 +346,15 @@ Partial Class Form1
         TaskInpPropBut.TabIndex = 11
         TaskInpPropBut.Text = "追加"
         TaskInpPropBut.UseVisualStyleBackColor = True
+        ' 
+        ' Label10
+        ' 
+        Label10.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label10.Location = New Point(20, 83)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(65, 16)
+        Label10.TabIndex = 10
+        Label10.Text = "タスクID"
         ' 
         ' TaskStarFill2
         ' 
@@ -367,6 +403,15 @@ Partial Class Form1
         TaskScoreTab.TabIndex = 2
         TaskScoreTab.Text = "タスク一覧"
         ' 
+        ' Label17
+        ' 
+        Label17.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label17.Location = New Point(326, 83)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(62, 16)
+        Label17.TabIndex = 10
+        Label17.Text = "進捗状況"
+        ' 
         ' DataFill3
         ' 
         DataFill3.Location = New Point(326, 22)
@@ -403,6 +448,15 @@ Partial Class Form1
         TaskIdFill3.Size = New Size(83, 23)
         TaskIdFill3.TabIndex = 22
         ' 
+        ' Label16
+        ' 
+        Label16.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label16.Location = New Point(224, 83)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(62, 16)
+        Label16.TabIndex = 10
+        Label16.Text = "セット数"
+        ' 
         ' TaskName
         ' 
         TaskName.FormattingEnabled = True
@@ -435,10 +489,46 @@ Partial Class Form1
         TaskSetFill3.Size = New Size(83, 23)
         TaskSetFill3.TabIndex = 23
         ' 
+        ' Label19
+        ' 
+        Label19.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label19.Location = New Point(122, 25)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(62, 16)
+        Label19.TabIndex = 10
+        Label19.Text = "タスク"
+        ' 
+        ' Label15
+        ' 
+        Label15.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label15.Location = New Point(122, 83)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(62, 16)
+        Label15.TabIndex = 10
+        Label15.Text = "終了時刻"
+        ' 
+        ' Label18
+        ' 
+        Label18.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label18.Location = New Point(20, 25)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(65, 16)
+        Label18.TabIndex = 10
+        Label18.Text = "タスクID"
+        ' 
+        ' Label14
+        ' 
+        Label14.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
+        Label14.Location = New Point(20, 83)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(65, 16)
+        Label14.TabIndex = 10
+        Label14.Text = "開始時刻"
+        ' 
         ' PomTimer
         ' 
         PomTimer.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
-        PomTimer.Font = New Font("Baskerville Old Face", 59.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        PomTimer.Font = New Font("Microsoft Sans Serif", 50.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         PomTimer.ForeColor = Color.Red
         PomTimer.Location = New Point(26, 168)
         PomTimer.Name = "PomTimer"
@@ -542,96 +632,6 @@ Partial Class Form1
         Label9.Size = New Size(94, 25)
         Label9.TabIndex = 10
         Label9.Text = "タスクID"
-        ' 
-        ' Label10
-        ' 
-        Label10.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label10.Location = New Point(20, 83)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(65, 16)
-        Label10.TabIndex = 10
-        Label10.Text = "タスクID"
-        ' 
-        ' Label11
-        ' 
-        Label11.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label11.Location = New Point(122, 83)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(62, 16)
-        Label11.TabIndex = 10
-        Label11.Text = "開始時刻"
-        ' 
-        ' Label12
-        ' 
-        Label12.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label12.Location = New Point(224, 83)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(62, 16)
-        Label12.TabIndex = 10
-        Label12.Text = "セット数"
-        ' 
-        ' Label13
-        ' 
-        Label13.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label13.Location = New Point(326, 83)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(62, 16)
-        Label13.TabIndex = 10
-        Label13.Text = "進捗状況"
-        ' 
-        ' Label14
-        ' 
-        Label14.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label14.Location = New Point(20, 83)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(65, 16)
-        Label14.TabIndex = 10
-        Label14.Text = "開始時刻"
-        ' 
-        ' Label15
-        ' 
-        Label15.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label15.Location = New Point(122, 83)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(62, 16)
-        Label15.TabIndex = 10
-        Label15.Text = "終了時刻"
-        ' 
-        ' Label16
-        ' 
-        Label16.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label16.Location = New Point(224, 83)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(62, 16)
-        Label16.TabIndex = 10
-        Label16.Text = "セット数"
-        ' 
-        ' Label17
-        ' 
-        Label17.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label17.Location = New Point(326, 83)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(62, 16)
-        Label17.TabIndex = 10
-        Label17.Text = "進捗状況"
-        ' 
-        ' Label18
-        ' 
-        Label18.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label18.Location = New Point(20, 25)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(65, 16)
-        Label18.TabIndex = 10
-        Label18.Text = "タスクID"
-        ' 
-        ' Label19
-        ' 
-        Label19.Font = New Font("メイリオ", 9.75F, FontStyle.Bold)
-        Label19.Location = New Point(122, 25)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(62, 16)
-        Label19.TabIndex = 10
-        Label19.Text = "タスク"
         ' 
         ' Form1
         ' 
